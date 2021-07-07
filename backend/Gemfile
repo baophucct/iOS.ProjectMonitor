@@ -21,7 +21,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-its'
   gem 'fuubar'
-  gem 'webmock', require: false
+  gem 'webmock', '>= 1.18.0', require: false
   gem 'sinatra'
   gem 'pry'
   gem 'timecop'
