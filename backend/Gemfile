@@ -22,7 +22,7 @@ group :development, :test do
   gem 'rspec-its'
   gem 'fuubar'
   gem 'webmock', require: false
-  gem 'sinatra'
+  gem 'sinatra', '>= 4.0.0'
   gem 'pry'
   gem 'timecop'
 end
