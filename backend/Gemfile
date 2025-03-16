@@ -17,7 +17,7 @@ gem 'pusher'
 gem 'god'
 
 group :development, :test do
-  gem 'rack'
+  gem 'rack', '>= 2.2.13'
   gem 'rspec'
   gem 'rspec-its'
   gem 'fuubar'
