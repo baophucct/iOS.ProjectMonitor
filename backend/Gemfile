@@ -11,7 +11,7 @@ gem 'settingslogic'
 gem 'rufus-scheduler'
 gem 'hashie'
 gem 'rake'
-gem 'redis-activesupport'
+gem 'redis-activesupport', '>= 5.2.0'
 gem 'redis-semaphore'
 gem 'pusher'
 gem 'god'
@@ -22,7 +22,7 @@ group :development, :test do
   gem 'rspec-its'
   gem 'fuubar'
   gem 'webmock', require: false
-  gem 'sinatra'
+  gem 'sinatra', '>= 2.0.0'
   gem 'pry'
   gem 'timecop'
 end
