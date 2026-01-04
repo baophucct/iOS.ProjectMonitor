@@ -8,28 +8,33 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    bigdecimal (3.3.1)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     coderay (1.1.0)
     connection_pool (2.0.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    csv (3.3.5)
     diff-lcs (1.2.5)
     fuubar (2.0.0)
       rspec (~> 3.0)
       ruby-progressbar (~> 1.4)
     god (0.13.4)
     hashie (3.2.0)
-    httparty (0.13.1)
-      json (~> 1.8)
+    httparty (0.24.0)
+      csv
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     httpclient (2.4.0)
     i18n (0.6.11)
-    json (1.8.1)
+    json (1.8.6)
     method_source (0.8.2)
+    mini_mime (1.1.5)
     minitest (5.4.0)
     multi_json (1.10.1)
-    multi_xml (0.5.5)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -103,7 +108,7 @@ DEPENDENCIES
   fuubar
   god
   hashie
-  httparty
+  httparty (>= 0.24.0)
   pry
   pusher
   rack
@@ -119,3 +124,9 @@ DEPENDENCIES
   sinatra
   timecop
   webmock
+
+RUBY VERSION
+   ruby 3.1.7p261
+
+BUNDLED WITH
+   2.3.27
